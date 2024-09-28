@@ -14,15 +14,15 @@ Persona "*" -l- "*" Hobbies : Aficiones
 @startuml Ejercicio 8 
 title Ejercicio 8: Teatro
 
-!include clases/Espectaculo.iuml
-!include clases/precio.iuml
-!include clases/representacion.iuml
-!include clases/TipoEspectaculo.iuml
-!include clases/Zona.iuml
-!include clases/Localidad.iuml
-!include clases/entrada.iuml
-!include enumerados/Canal.iuml
-!include enumerados/Prueba.iuml
+!include clases/8/Espectaculo.iuml
+!include clases/8/precio.iuml
+!include clases/8/representacion.iuml
+!include clases/8/TipoEspectaculo.iuml
+!include clases/8/Zona.iuml
+!include clases/8/Localidad.iuml
+!include clases/8/entrada.iuml
+!include enumerados/8/Canal.iuml
+!include enumerados/8/Prueba.iuml
 
 Espectaculo -u-* TipoEspectaculo : contiene
 Representacion -u-* Espectaculo : esRepresentado
