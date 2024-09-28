@@ -1,0 +1,5 @@
+Class CanalEntrada << (E, yellow) Enumerado >>{
+    web
+    taquilla
+    invitación
+}

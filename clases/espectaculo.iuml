@@ -1,0 +1,5 @@
+Class Espectaculo << Entidad >>{
+nombre
+denominacio
+duracion
+}

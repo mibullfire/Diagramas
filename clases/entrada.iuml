@@ -1,0 +1,5 @@
+Class Entrada <<Entidad>>{
+    fechaHoraCompra
+    canal:CanalEntrada
+    precioCompra
+}

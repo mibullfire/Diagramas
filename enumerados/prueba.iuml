@@ -1,0 +1,5 @@
+Class Entrada_Zona << (E, yellow) Enumerado>>{
+    patio
+    balcon
+    terraza
+}

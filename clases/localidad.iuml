@@ -1,0 +1,4 @@
+Class Localidad << Entidad >> {
+    numero Fila
+    numero Butaca
+}

@@ -8,7 +8,7 @@ skinparam defaultFontName Arial
 
 skinparam Arrow {
     FontColor Black
-    FontSize 11
+    FontSize 10
     FontName Segoe Print
 }
 
