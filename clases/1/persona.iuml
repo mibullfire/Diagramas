@@ -1,0 +1,5 @@
+class Persona <<Entidad>>{
+    NIF
+    nombre
+    sexo: E_Sexo
+}

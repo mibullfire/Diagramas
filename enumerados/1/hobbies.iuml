@@ -1,0 +1,6 @@
+class E_Hobbies <<(E, yellow) Enumerado>>{
+    literatura
+    cine
+    deporte
+    gastronomía
+}
