@@ -3,8 +3,8 @@ title Ejercicio 1: Hobbies
 
 !include clases/1/persona.iuml
 !include clases/1/hobbies.iuml
-!include enumerados/1/sexo.iuml
-!include enumerados/1/hobbies.iuml
+!include clases/1/e_sexo.iuml
+!include clases/1/e_hobbies.iuml
 
 Persona "*" -l- "*" Hobbies : Aficiones
 
@@ -21,8 +21,8 @@ title Ejercicio 8: Teatro
 !include clases/8/Zona.iuml
 !include clases/8/Localidad.iuml
 !include clases/8/entrada.iuml
-!include enumerados/8/Canal.iuml
-!include enumerados/8/Prueba.iuml
+!include clases/8/e_canal.iuml
+!include clases/8/e_prueba.iuml
 
 Espectaculo -u-* TipoEspectaculo : contiene
 Representacion -u-* Espectaculo : esRepresentado
