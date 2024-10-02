@@ -1,0 +1,4 @@
+class Línea <<Entidad>>{
+    cantidad
+    precio
+}

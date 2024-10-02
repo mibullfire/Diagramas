@@ -1,0 +1,6 @@
+class Producto <<Entidad>>{
+    nombre
+    precioActual
+    stock
+    código
+}

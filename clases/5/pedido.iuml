@@ -1,0 +1,5 @@
+class Pedido <<Entidad>>{
+    fecha
+    código
+    descuento [0.1]
+}

@@ -1,4 +1,4 @@
-@startuml Ejercicio 1
+@startuml Examen 1
 title Examen 1: Hobbies
 
 !include clases/1/persona.iuml
@@ -11,7 +11,28 @@ Persona "*" -l- "*" Hobbies : Aficiones
 @enduml
 
 '---------------------------------------------------------------------------
-@startuml Ejercicio 7
+@startuml Examen 5
+title Examen 5: Pedidos Virtuales
+!include clases/5/foto.iuml
+!include clases/5/linea.iuml
+!include clases/5/pedido.iuml
+!include clases/5/producto.iuml
+!include clases/5/usuario.iuml
+
+Usuario *-- "*" Pedido
+Pedido "*" -- "*" Producto
+Producto *-r- "*" Foto
+
+Línea "*" -l-* Pedido
+Línea "*" --* Producto
+
+' La clase Línea hace referencia a cada una de las líneas de un ticket.
+' La clase Foto alberga todas las n fotos que va a tener un Producto
+
+@enduml
+
+'---------------------------------------------------------------------------
+@startuml Examen 7
 title Examen 7: Acogida de Animales
 
 !include clases/7/Especie.iuml
@@ -34,7 +55,7 @@ Persona "0 1" -- "*" Ingreso
 @enduml
 
 '---------------------------------------------------------------------------
-@startuml Ejercicio 8 
+@startuml Examen 8 
 title Examen 8: Teatro
 
 !include clases/8/Espectaculo.iuml
