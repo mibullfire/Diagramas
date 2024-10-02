@@ -1,0 +1,3 @@
+class Ingreso <<Entidad>> {
+    fechaHoraIngreso
+}

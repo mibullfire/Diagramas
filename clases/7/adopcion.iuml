@@ -1,0 +1,3 @@
+class Adopción <<Entidad>>{
+    fecha
+}

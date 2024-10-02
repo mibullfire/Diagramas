@@ -1,5 +1,5 @@
 @startuml Ejercicio 1
-title Ejercicio 1: Hobbies
+title Examen 1: Hobbies
 
 !include clases/1/persona.iuml
 !include clases/1/hobbies.iuml
@@ -11,8 +11,31 @@ Persona "*" -l- "*" Hobbies : Aficiones
 @enduml
 
 '---------------------------------------------------------------------------
+@startuml Ejercicio 7
+title Examen 7: Acogida de Animales
+
+!include clases/7/Especie.iuml
+!include clases/7/Raza.iuml
+!include clases/7/Animal.iuml
+!include clases/7/Ingreso.iuml
+!include clases/7/Abandono.iuml
+!include clases/7/Entrega.iuml
+!include clases/7/Persona.iuml
+!include clases/7/Adopcion.iuml
+
+Raza "*" -r-* Especie
+Animal "*" -u-* Raza
+Ingreso "*" -u-* Animal : recibido
+(Abandono, Entrega) -u-> Ingreso : {Completo, Disjunto}
+Entrega "*" -l-* Persona
+Persona "0 1" -- "*" Ingreso
+(Persona, Ingreso) .. Adopción
+
+@enduml
+
+'---------------------------------------------------------------------------
 @startuml Ejercicio 8 
-title Ejercicio 8: Teatro
+title Examen 8: Teatro
 
 !include clases/8/Espectaculo.iuml
 !include clases/8/precio.iuml

@@ -1,0 +1,4 @@
+class Abandono <<Entidad>>{
+    fechaHoraAbandono
+    lugar
+}
