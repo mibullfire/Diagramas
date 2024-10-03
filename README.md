@@ -10,4 +10,4 @@ Diagramas creados con PlantULM de la asignatura ISSI 1
 
 Hecho el ejercicio 7
 
-03/10/2024 Ejercicio 2 y 4
+03/10/2024 Ejercicio 2, 4 y 6.

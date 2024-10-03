@@ -64,6 +64,26 @@ Línea "*" --* Producto
 @enduml
 
 '---------------------------------------------------------------------------
+@startuml Examen 6
+title Examen 6: Gestión de Proyectos
+
+!include clases/6/asignación.iuml
+!include clases/6/e_cargo.iuml
+!include clases/6/empleado.iuml
+!include clases/6/proyecto.iuml
+!include clases/6/rol.iuml
+!include clases/6/tarea.iuml
+
+Proyecto *-left- "*" Rol : tiene
+Proyecto *-right- "*" Tarea : tiene
+Tarea *-- "*" Tarea : compuesta por
+Empleado "0.1" -up- "*" Rol : corresponde a
+Tarea *-down- "0.1" Asignación : tiene
+Empleado "1" -right- "*" Asignación : es responsabe de
+
+@enduml
+
+'---------------------------------------------------------------------------
 @startuml Examen 7
 title Examen 7: Acogida de Animales
 

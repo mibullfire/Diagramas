@@ -1,0 +1,4 @@
+class Empleado <<Entidad>>{
+    nombre
+    ?
+}

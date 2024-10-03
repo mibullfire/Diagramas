@@ -1,0 +1,6 @@
+class e_cargo <<Entidad>>{
+    director
+    analista
+    responsableDePruebas
+    ...   
+}

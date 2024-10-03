@@ -1,0 +1,5 @@
+class Rol <<Entidad>>{
+    e_cargo
+    fechaInicio
+    fechaFin
+}

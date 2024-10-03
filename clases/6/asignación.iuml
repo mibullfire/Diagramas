@@ -1,0 +1,4 @@
+class Asignación <<Entidad>>{
+    fechaInicio
+    fechaFin
+}

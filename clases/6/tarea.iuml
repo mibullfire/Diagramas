@@ -1,0 +1,5 @@
+class Tarea <<Entidad>>{
+    identificador
+    descripción
+    coste
+}
