@@ -1,0 +1,4 @@
+class Foto <<(C, LightPink) Entidad>>{
+    título
+    foto
+}

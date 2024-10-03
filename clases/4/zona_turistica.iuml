@@ -1,0 +1,3 @@
+class Zona_Turística <<(C, LightPink) Entidad>>{
+    zona
+}

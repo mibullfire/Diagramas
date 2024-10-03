@@ -1,0 +1,6 @@
+class Reserva <<Entidad>>{
+    check-in
+    check-out
+    comentario [0..1]
+    valoracion [0..1]
+}

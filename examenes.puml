@@ -24,6 +24,25 @@ Persona "*" -- "*" Persona : Antipatías
 @enduml
 
 '---------------------------------------------------------------------------
+@startuml Examen 4
+title Examen 4: Alquiler de Departamentos
+
+!include clases/4/alojamiento.iuml
+!include clases/4/foto.iuml
+!include clases/4/reserva.iuml
+!include clases/4/usuario.iuml
+!include clases/4/zona_turistica.iuml
+
+Zona_Turística *-- "*" Alojamiento : ubicado en:
+Alojamiento *-- "*" Foto : contiene fotos:
+Reserva "*" --* Alojamiento
+Reserva "*" --* Usuario
+Alojamiento --o Usuario : EsPropietarioDe
+
+
+@enduml
+
+'---------------------------------------------------------------------------
 @startuml Examen 5
 title Examen 5: Pedidos Virtuales
 !include clases/5/foto.iuml

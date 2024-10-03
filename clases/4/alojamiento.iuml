@@ -1,0 +1,10 @@
+class Alojamiento << Entidad >>{
+    dirección
+    numeroDormitorios
+    numeroBaños
+    ocupaciónMáxima
+    aire
+    wifi
+    piscina
+    garaje
+}

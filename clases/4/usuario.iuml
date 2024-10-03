@@ -1,0 +1,8 @@
+class Usuario <<Entidad>>{
+    dni
+    nombre
+    correo
+    contraseña
+    dirección
+    teléfono
+}
