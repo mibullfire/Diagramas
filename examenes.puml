@@ -11,6 +11,19 @@ Persona "*" -l- "*" Hobbies : Aficiones
 @enduml
 
 '---------------------------------------------------------------------------
+@startuml Examen 2
+title Examen 2: Simpatías
+
+!include clases/2/persona.iuml
+!include clases/2/e_sexo.iuml
+
+Persona "*" -- "*" Persona : Simpatías
+Persona "*" -- "*" Persona : Antipatías
+
+
+@enduml
+
+'---------------------------------------------------------------------------
 @startuml Examen 5
 title Examen 5: Pedidos Virtuales
 !include clases/5/foto.iuml

@@ -1,0 +1,4 @@
+class e_sexo <<(E, LightCoral) Enumerado>>{
+    hombre
+    mujer
+}

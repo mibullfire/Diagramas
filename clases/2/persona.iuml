@@ -1,0 +1,4 @@
+class Persona <<(P, LightGray) Entidad>> {
+    nombre
+    e_sexo
+}
