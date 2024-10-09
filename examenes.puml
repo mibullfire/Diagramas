@@ -6,7 +6,7 @@ title Examen 1: Hobbies
 !include clases/1/e_sexo.iuml
 !include clases/1/e_hobbies.iuml
 
-Persona "*" -l- "*" Hobbies : Aficiones
+Persona "*" -l- "*" Hobbies : > tieneAficiones
 
 @enduml
 
@@ -17,8 +17,8 @@ title Examen 2: Simpatías
 !include clases/2/persona.iuml
 !include clases/2/e_sexo.iuml
 
-Persona "*" -- "*" Persona : Simpatías
-Persona "*" -- "*" Persona : Antipatías
+Persona "*" -- "*" Persona : simpatíaCon
+Persona "*" -- "*" Persona : antipatíaCon
 
 
 @enduml
@@ -33,11 +33,11 @@ title Examen 4: Alquiler de Departamentos
 !include clases/4/usuario.iuml
 !include clases/4/zona_turistica.iuml
 
-Zona_Turística *-- "*" Alojamiento : ubicado en:
-Alojamiento *-- "*" Foto : contiene fotos:
-Reserva "*" --* Alojamiento
-Reserva "*" --* Usuario
-Alojamiento --o Usuario : EsPropietarioDe
+Zona_Turística *-- "*" Alojamiento : < ubicadoEn:
+Alojamiento *-- "*" Foto : > contieneFotos
+Reserva "*" --* Alojamiento : > reservaDe 
+Reserva "*" --* Usuario : > reservadoPor
+Alojamiento --o Usuario : < esPropietarioDe
 
 
 @enduml
@@ -51,11 +51,11 @@ title Examen 5: Pedidos Virtuales
 !include clases/5/producto.iuml
 !include clases/5/usuario.iuml
 
-Usuario *-- "*" Pedido
-Pedido "*" -- "*" Producto
-Producto *-r- "*" Foto
+Usuario *-- "*" Pedido : < pedidoPor
+Pedido "*" -- "*" Producto : > contiene
+Producto *-r- "*" Foto : > contieneFotos
 
-Línea "*" -l-* Pedido
+Línea "*" -l-* Pedido : < contiene
 Línea "*" --* Producto
 
 ' La clase Línea hace referencia a cada una de las líneas de un ticket.
@@ -74,12 +74,12 @@ title Examen 6: Gestión de Proyectos
 !include clases/6/rol.iuml
 !include clases/6/tarea.iuml
 
-Proyecto *-left- "*" Rol : tiene
-Proyecto *-right- "*" Tarea : tiene
+Proyecto *-left- "*" Rol : > tiene
+Proyecto *-right- "*" Tarea : > tiene
 Tarea *-- "*" Tarea : compuesta por
-Empleado "0.1" -up- "*" Rol : corresponde a
-Tarea *-down- "0.1" Asignación : tiene
-Empleado "1" -right- "*" Asignación : es responsabe de
+Empleado "0..1" -up- "*" Rol : < correspondeA
+Tarea *-down- "0..1" Asignación : < tiene
+Empleado "1" -right- "*" Asignación : > esAsignadoA
 
 @enduml
 
@@ -96,13 +96,13 @@ title Examen 7: Acogida de Animales
 !include clases/7/Persona.iuml
 !include clases/7/Adopcion.iuml
 
-Raza "*" -r-* Especie
-Animal "*" -u-* Raza
-Ingreso "*" -u-* Animal : recibido
+Raza "*" -r-* Especie : > perteneceA
+Animal "*" -u-* Raza : > perteneceA
+Ingreso "*" -u-* Animal : > ingresa
 (Abandono, Entrega) -u-> Ingreso : {Completo, Disjunto}
-Entrega "*" -l-* Persona
-Persona "0 1" -- "*" Ingreso
-(Persona, Ingreso) .. Adopción
+Entrega "*" -l-* Persona : > entregadoPor
+Persona "0..1" -- "*" Ingreso
+(Persona, Ingreso) .. Adopción : esAdoptadoPor
 
 @enduml
 
@@ -120,10 +120,10 @@ title Examen 8: Teatro
 !include clases/8/e_canal.iuml
 !include clases/8/e_prueba.iuml
 
-Espectaculo -u-* TipoEspectaculo : contiene
-Representacion -u-* Espectaculo : esRepresentado
-Zona "*" -r- "*" TipoEspectaculo : tienePrecio
-Localidad -u-* Zona : contiene
+Espectaculo -u-* TipoEspectaculo : > esDe
+Representacion -u-* Espectaculo : < esRepresentado
+Zona "*" -r- "*" TipoEspectaculo 
+Localidad -u-* Zona : > contiene
 Localidad "*" -- "*" Representacion : estaOcupada
 (Zona, TipoEspectaculo) .. Precio
 (Localidad, Representacion) .. Entrada
